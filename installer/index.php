@@ -270,7 +270,7 @@ if($_POST['ip'] != '' && $_POST['username'] != '' && $_POST['password'] != '' &&
 			$('input').val('');
 		}
 		function save() {
-			if($('#ip').val() == '' || $('#username').val() == '' || $('#password').val() == '' || $('#dbname').val() == '')
+			if($('#ip').val() == '' || $('#username').val() == '' || $('#dbname').val() == '')
 					return Swal.fire('Install', 'กรุณาใส่ข้อมูลให้ครบ !', 'error');
 			$.post("", {ip: $('#ip').val(), username: $('#username').val(), password: $('#password').val(), dbname: $('#dbname').val()},
 				function(data)
