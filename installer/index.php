@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-if($_POST['ip'] != '' && $_POST['username'] != '' && $_POST['password'] != '' && $_POST['dbname'] != '')
+if($_POST['ip'] != '' && $_POST['username'] != '' && $_POST['dbname'] != '')
 {
 	$ip = $_POST['ip'];
 	$user = $_POST['username'];
